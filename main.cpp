@@ -69,8 +69,14 @@ int main() {
 
             if (abs(newOne - one) <= 0.001 && abs(newTwo - two) <= 0.001 && abs(newThree - three) <= 0.001 && abs(newFour - four) <= 0.001 && abs(newFive - five) <= 0.001) {
                 done = true;
-                //break;
+                break;
             }
+
+            one = newOne;
+            two = newTwo;
+            three = newThree;
+            four = newFour;
+            five = newFive;
 
             cout << "Page rank of point 1: " << newOne << endl;
             cout << "Page rank of point 2: " << newTwo << endl;
@@ -79,12 +85,8 @@ int main() {
             cout << "Page rank of point 5: " << newFive << endl;
             cout << "We needed " << i + 1 << " number of iterations to converge!" << endl;
 
-
         }
-
     }
-
-
-
+    
     return 0;
 }
