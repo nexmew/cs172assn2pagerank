@@ -68,6 +68,14 @@ int main() {
             double newFive = pagerankFive(two, four, five);
 
             if (abs(newOne - one) <= 0.001 && abs(newTwo - two) <= 0.001 && abs(newThree - three) <= 0.001 && abs(newFour - four) <= 0.001 && abs(newFive - five) <= 0.001) {
+                
+                cout << "We needed " << i << " number of iterations to converge!" << endl;
+                cout << "Page rank of point 1: " << one << endl;
+                cout << "Page rank of point 2: " << two << endl;
+                cout << "Page rank of point 3: " << three << endl;
+                cout << "Page rank of point 4: " << four << endl;
+                cout << "Page rank of point 5: " << five << endl;
+
                 done = true;
                 break;
             }
@@ -78,15 +86,17 @@ int main() {
             four = newFour;
             five = newFive;
 
+            cout << "Iteration: " << i + 1 << endl;
             cout << "Page rank of point 1: " << newOne << endl;
             cout << "Page rank of point 2: " << newTwo << endl;
             cout << "Page rank of point 3: " << newThree << endl;
             cout << "Page rank of point 4: " << newFour << endl;
             cout << "Page rank of point 5: " << newFive << endl;
-            cout << "We needed " << i + 1 << " number of iterations to converge!" << endl;
+            cout << endl;
+        
 
         }
     }
-    
+
     return 0;
 }
