@@ -7,16 +7,13 @@ double pagerankOne(double rankThree) {
 
     double calculation = 0.0;
     calculation = 0.7 * (1 * rankThree) + (0.3) * (0.2);
-
     return calculation;
-
 }
 
 double pagerankTwo(double rankOne) {
     
     double calculation = 0.0;
     calculation = 0.7 * (1 * rankOne) + (0.3) * (0.2);
-
     return calculation;
 }
 
@@ -24,14 +21,12 @@ double pagerankThree(double rankTwo) {
     
     double calculation = 0.0;
     calculation = 0.7 * (1 * rankTwo) + (0.3) * (0.2);
-
     return calculation;
 }
 
 double pagerankFour() {
 
     double calculation = (0.3) * (0.2);
-
     return calculation;
 }
 
@@ -39,12 +34,8 @@ double pagerankFive(double rankTwo, double rankFour, double rankFive) {
 
     double calculation = 0.0;
     calculation = 0.7 * (1 * rankTwo + 1 * rankFour + 1 * rankFive) + (0.3) * (0.2);
-
     return calculation;
 }
-
-
-
 
 int main() {
 
